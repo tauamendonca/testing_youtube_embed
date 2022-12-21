@@ -5,13 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "trainee_fteam_app",
+            "name": "testing_youtube_embed",
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart"
         },
         {
-            "name": "trainee_fteam_app (no web security)",
+            "name": "testing_youtube_embed (no web security)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile",
@@ -19,14 +19,14 @@
             "args": ["--web-browser-flag", "--disable-web-security",]
         },
         {
-            "name": "trainee_fteam_app (profile mode)",
+            "name": "testing_youtube_embed (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile",
             "program": "lib/main.dart",
         },
         {
-            "name": "trainee_fteam_app (release mode)",
+            "name": "testing_youtube_embed (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
