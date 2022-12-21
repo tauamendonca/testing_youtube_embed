@@ -33,21 +33,18 @@ class YoutubeIframePageState extends State<YoutubeIframePage> {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Column(
-        children: <Widget>[
-          Text(
-            _controller.metadata.title,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 18,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxHeight: 400),
+              child: YoutubePlayer(
+                controller: _controller,
+              ),
             ),
-            overflow: TextOverflow.ellipsis,
-            maxLines: 1,
-          ),
-          YoutubePlayer(
-            controller: _controller,
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
